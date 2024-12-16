@@ -2,7 +2,7 @@ def get_mask_card_number(card_number: str) -> str:
     """Маскирует номер счета или карты пользователя"""
     score_number = card_number.split()
     str_score_number = str(score_number[-1])
-    if len(str_score_number) == 12:
+    if len(str_score_number) == 16:
         return (
             " ".join(score_number[:-1:])
             + " "
@@ -14,6 +14,9 @@ def get_mask_card_number(card_number: str) -> str:
         )
     if len(str_score_number) == 20:
         return f"Счет: **{str_score_number[-4::]}"
+
+    else:
+        return 'Введите корректную карту'
 
 
 def get_date(time: str) -> str:
@@ -29,3 +32,4 @@ def get_date(time: str) -> str:
         "second": clock[2],
     }
     return f"{dict_time['day']}.{dict_time['month']}.{dict_time['year']}"
+
