@@ -1,6 +1,6 @@
-def get_mask_card_number(score_number: str) -> str:
+def get_mask_card_number(card_number: str) -> str:
     """Маскирует номер счета или карты пользователя"""
-    score_number = score_number.split()
+    score_number = card_number.split()
     str_score_number = str(score_number[-1])
     if len(str_score_number) == 16:
         return (
