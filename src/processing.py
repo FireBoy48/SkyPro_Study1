@@ -39,5 +39,5 @@ user_input = [
 ]
 
 
-print(filter_by_state(user_input))
-print(sort_by_date(user_input))
+#print(filter_by_state(user_input))
+#print(sort_by_date(user_input)) 
