@@ -13,7 +13,10 @@ def get_date(time: str) -> str:
     return f"{dict_time['day']}{dict_time['month']}{dict_time['year']}"
 
 
-def filter_by_state(base_idtime, state='EXECUTED'):
+def filter_by_state(base_idtime: list, state: str='EXECUTED') -> list:
+    '''
+    Сортирует список по параметру state
+    '''
     output = []
     for unit in base_idtime:
         if unit['state'] == state:
@@ -21,7 +24,10 @@ def filter_by_state(base_idtime, state='EXECUTED'):
     return output
 
 
-def sort_by_date(base_idtime, reverse=True):
+def sort_by_date(base_idtime: str, reverse: bool=True) -> list:
+    '''
+    Сортирует список по дате
+    '''
     return sorted(base_idtime, key = lambda x: x['date'], reverse=reverse)
 
 
