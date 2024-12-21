@@ -16,3 +16,4 @@
 * Раскомментируйте `print(sort_by_date(user_input, reverse))`
 * Параметр reverse отвечает за порядок элементов в списке(по умолчанию True)
 
+write on termux 
