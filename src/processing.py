@@ -1,18 +1,3 @@
-def get_date(time: str) -> str:
-    """Переводит дату в удобный формат"""
-    date = time.split("T")[0].split("-")
-    clock = time.split("T")[1].split(":")
-    dict_time = {
-        "year": date[0],
-        "month": date[1],
-        "day": date[2],
-        "hour": clock[0],
-        "minute": clock[1],
-        "second": clock[2],
-    }
-    return f"{dict_time['day']}{dict_time['month']}{dict_time['year']}"
-
-
 def filter_by_state(base_idtime: list, state: str = "EXECUTED") -> list:
     """
     Сортирует список по параметру state
@@ -39,5 +24,5 @@ user_input = [
 ]
 
 
-#print(filter_by_state(user_input))
-#print(sort_by_date(user_input)) 
+# print(filter_by_state(user_input))
+print(sort_by_date(user_input))
