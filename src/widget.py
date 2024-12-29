@@ -1,35 +1,36 @@
-def get_mask_card_number(card_number: str) -> str:
+from src.masks import get_mask_account, get_mask_card_number
+
+
+def mask_account_card(card_number: str) -> str:
     """Маскирует номер счета или карты пользователя"""
     score_number = card_number.split()
-    str_score_number = str(score_number[-1])
-    if len(str_score_number) == 16:
-        return (
-            " ".join(score_number[:-1:])
-            + " "
-            + str_score_number[:4:]
-            + " "
-            + str_score_number[4:6:]
-            + "** **** "
-            + str_score_number[12::]
-        )
-    if len(str_score_number) == 20:
-        return f"Счет: **{str_score_number[-4::]}"
-
+    if len(score_number[-1]) == 16:
+        return " ".join(score_number[:-1:]) + " " + get_mask_card_number(int(score_number[-1]))
+    if len(score_number[-1]) == 20:
+        return f"Счет: {get_mask_account(int(score_number[-1]))}"
     else:
-        return 'Введите корректную карту'
+        return "Некорректный ввод"
 
 
 def get_date(time: str) -> str:
     """Переводит дату в удобный формат"""
-    date = time.split("T")[0].split("-")
-    clock = time.split("T")[1].split(":")
+    date = list(map(int, time.split("T")[0].split("-")))
+    clock = list(map(int, time.split("T")[1].split(":")[:-1:]))
+    second = float(time.split("T")[1].split(":")[-1])
     dict_time = {
         "year": date[0],
         "month": date[1],
         "day": date[2],
         "hour": clock[0],
         "minute": clock[1],
-        "second": clock[2],
+        "second": second,
     }
-    return f"{dict_time['day']}.{dict_time['month']}.{dict_time['year']}"
-
+    if (
+        1 <= dict_time["month"] <= 12
+        and 1 <= dict_time["day"] <= 31
+        and 1 <= dict_time["hour"] <= 24
+        and 1 <= dict_time["minute"] <= 60
+        and 1 <= dict_time["second"] <= 60
+    ):
+        return f"{dict_time['day']}.{dict_time['month']}.{dict_time['year']}"
+    return "Некорректный ввод"
