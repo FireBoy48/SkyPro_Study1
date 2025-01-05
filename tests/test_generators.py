@@ -91,7 +91,7 @@ transactions = [
     ],
 )
 def test_filter_by_currency(value1, value2, expected):
-    filter_by_currency(value1, value2) == expected
+    list(filter_by_currency(value1, value2)) == expected
 
 
 # transaction_descriptions

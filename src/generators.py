@@ -49,14 +49,14 @@ transactions = [
 ]
 
 
-def filter_by_currency(transactions: list, code: str) -> list:
+def filter_by_currency(transactions: list, code: str) -> Generator:
     """
     Фильтрует транзакции по кодовым словам валют
     :param transactions: База данных с транзакциями пользователей
     :param code: Кодовое слово валюты
     :return: Список транзакций на определенной валюте
     """
-    return list(filter(lambda x: x["operationAmount"]["currency"]["code"] == code, transactions))
+    return filter(lambda x: x["operationAmount"]["currency"]["code"] == code, transactions)
 
 
 def transaction_descriptions(transactions: list) -> Generator:
