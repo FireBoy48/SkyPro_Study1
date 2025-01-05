@@ -2,33 +2,33 @@ import pytest
 
 
 # MASKS
-##fixture для get_mask_account
+# fixture для get_mask_account
 @pytest.fixture
 def card():
     return ("1234 56** **** 1121", "1234 56** **** 8765", "Некорректный ввод")
 
 
-##fixture для get_mask_card_number
+# fixture для get_mask_card_number
 @pytest.fixture
 def account():
     return ("**4321", "Некорректный ввод")
 
 
 # WIDGET
-##fixture для mask_account_card
+# fixture для mask_account_card
 @pytest.fixture
 def account_card():
     return ("1234 56** **** 1121", "**4321", "Некорректный ввод")
 
 
-##fixture для get_date
+# fixture для get_date
 @pytest.fixture
 def date():
     return ("28.12.2024", "Некорректный ввод")
 
 
 # PROCESSING
-##fixture для filter_by_state
+# fixture для filter_by_state
 @pytest.fixture
 def state():
     return (
@@ -44,7 +44,7 @@ def state():
 
 
 @pytest.fixture
-##fixture для sort_by_date
+# fixture для sort_by_date
 def sort_date():
     return (
         [
