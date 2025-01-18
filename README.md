@@ -35,7 +35,7 @@
 ## generators.py
 ### 1. Фильтрация транзакций по валютам
 * Замените или оставьте по умолчанию данные в transactions
-* Вызовите функцию при помощи `print filter_by_currency(transactions, code)`,   
+* Вызовите функцию при помощи `print (list(filter_by_currency(transactions, code)))`,   
       где transactions = база данных транзакций, а code = ключевое слово валюты 
 
 ### 2. Описание транзакций

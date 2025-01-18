@@ -11,8 +11,11 @@ from src.widget import get_date, mask_account_card
         ("банка №1", "Некорректный ввод"),
     ],
 )
-def test_mask_account_card(value, expected):
+def test_mask_account_card(value, expected, card):
     mask_account_card(value) == expected
+    with pytest.raises(ValueError):
+        mask_account_card(bad_value)
+        
 
 
 @pytest.mark.parametrize(
