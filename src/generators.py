@@ -1,4 +1,4 @@
-from email.generator import Generator
+from typing import Iterator
 
 transactions = [
     {
@@ -59,7 +59,7 @@ def filter_by_currency(transactions: list, code: str) -> list:
     return list(filter(lambda x: x["operationAmount"]["currency"]["code"] == code, transactions))
 
 
-def transaction_descriptions(transactions: list) -> Generator:
+def transaction_descriptions(transactions: list) -> Iterator:
     """
     Проходит по БД transaction и выдает итерируемый объект descriptions
     :param transactions: База данных с транзакциями пользователей
@@ -71,7 +71,7 @@ def transaction_descriptions(transactions: list) -> Generator:
         i += 1
 
 
-def card_number_generator(start: int, end: int) -> Generator:
+def card_number_generator(start: int, end: int) -> Iterator:
     """
     Генерирует номер карты из 16 знаков
     :param start: Точка начала генерации
