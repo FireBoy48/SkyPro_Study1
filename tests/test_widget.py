@@ -15,7 +15,6 @@ def test_mask_account_card(value, expected, card):
     mask_account_card(value) == expected
     with pytest.raises(AttributeError):
         mask_account_card(12345678)
-        
 
 
 @pytest.mark.parametrize(
