@@ -49,7 +49,7 @@ transactions = [
 ]
 
 
-def filter_by_currency(transactions: list, code: str) -> Generator:
+def filter_by_currency(transactions: list, code: str) -> Iterator:
     """
     Фильтрует транзакции по кодовым словам валют
     :param transactions: База данных с транзакциями пользователей
