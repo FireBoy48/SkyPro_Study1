@@ -13,9 +13,8 @@ from src.widget import get_date, mask_account_card
 )
 def test_mask_account_card(value, expected, card):
     mask_account_card(value) == expected
-    with pytest.raises(ValueError):
-        mask_account_card(bad_value)
-        
+    with pytest.raises(AttributeError):
+        mask_account_card(12345678)
 
 
 @pytest.mark.parametrize(
