@@ -17,13 +17,16 @@ def load_data_json(path_to_file: str) -> list:
     :param path_to_file: путь до json файла
     :return: данные из файла json банковских переводов в формате json-строки
     """
+
     try:
         with open(path_to_file, "r", encoding="utf-8") as file:
             data_operations = json.load(file)
+            if type(data_operations) != dict:
+                data_operations = []
     except Exception:
         data_operations = []
     return data_operations
-
+print(load_data_json(PATH_TO_DATA))
 
 def parsing_data(data_operations: list, num_transaction: int = 1) -> tuple:
     """
