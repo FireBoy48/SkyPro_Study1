@@ -2,6 +2,8 @@ import json
 import os
 from pathlib import Path
 from unittest.mock import patch
+
+import pytest
 from dotenv import load_dotenv
 from config import ROOT_DIR
 from src.utils import external_api, load_data_json, parsing_data
@@ -11,16 +13,32 @@ def test_load_data_json():
     path_to_file = Path.joinpath(ROOT_DIR, "data", "test.json")
 
     with open(path_to_file, "w") as f:
-        json.dump({"object": [1, 2]}, f)
+        json.dump([{"object": [1, 2]}], f)
 
-    expected_data = {"object": [1, 2]}
+    expected_data = [{"object": [1, 2]}]
     assert load_data_json(path_to_file) == expected_data
 
     os.remove(path_to_file)
 
 
+def test_load_data_json_notdict():
+    path_to_file = Path.joinpath(ROOT_DIR, "data", "test.json")
+    with open(path_to_file, "w") as f:
+        json.dump({"object": [1, 2]}, f)
+    expected_data = []
+    assert load_data_json(path_to_file) == expected_data
+    os.remove(path_to_file)
+
+
+def test_load_data_json_DecodeErr():
+    path_to_file = Path.joinpath(ROOT_DIR, "data", "test.json")
+    with open(path_to_file, "w") as f:
+        json.dump([{True: (1, 2)}], f)
+    os.remove(path_to_file)
+
+
 def test_load_data_json_exeptions():
-    assert load_data_json("wrong_path_to_file") == []
+        assert load_data_json("wrong_path_to_file") == []
 
 
 def test_parsing_data():
