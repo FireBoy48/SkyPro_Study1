@@ -3,8 +3,8 @@ import os
 from pathlib import Path
 from unittest.mock import patch
 
-import pytest
 from dotenv import load_dotenv
+
 from config import ROOT_DIR
 from src.utils import external_api, load_data_json, parsing_data
 
@@ -38,7 +38,7 @@ def test_load_data_json_DecodeErr():
 
 
 def test_load_data_json_exeptions():
-        assert load_data_json("wrong_path_to_file") == []
+    assert load_data_json("wrong_path_to_file") == []
 
 
 def test_parsing_data():
@@ -71,6 +71,6 @@ def test_external_api(mock_requests):
     mock_requests.return_value.json.return_value = {"result": 1000}
     assert external_api(10, "USD", "RUB") == 1000
     load_dotenv()
-    url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10"
+    url = "https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10"
     headers = {"apikey": os.getenv("API_KEY")}
     mock_requests.assert_called_once_with("GET", url, headers=headers)
