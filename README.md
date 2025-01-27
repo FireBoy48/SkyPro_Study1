@@ -64,4 +64,29 @@ print(next(result))                      # Повторите столько р�
 def function():
       pass
 ```
+
+## utils.py
+### load_data_json
+* Возвращает данные из файла банковских переводов в формате json
+* Вызывается при помощи
+```
+load_data_json(path_to_file) #где path_to_file путь до json файла
+```
+### parsing_data
+* Возвращает данные о сумме транзакции и валюте в которой она была проведена
+* Вызывается при помощи
+```
+parsing_data(data_operations, num_transaction=1) #где data_operations это информация о транзакциях в виде json-строки
+                                                 #а num_transaction порядковый номер транзакции
+```
+
+### external_api
+* Переводит сумму в другую валюту
+* Вызывается при помощи
+```
+external_api(amount, currency_code_from, currency_code_to='RUB') #где amount сумма транзакции
+                                                                 #currency_code_from валюта проведения транзакции
+                                                                 #currency_code_to валюта в которую переводят 
+```
+
 __Весь функционал протестирован, подробности в html-файле__
