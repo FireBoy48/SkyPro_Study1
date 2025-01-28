@@ -3,3 +3,6 @@
 2025-01-27 19:52:46,836 urllib3.connectionpool DEBUG: Starting new HTTPS connection (1): api.apilayer.com:443 
 2025-01-27 19:52:47,278 urllib3.connectionpool DEBUG: https://api.apilayer.com:443 "GET /exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 HTTP/1.1" 200 None 
 2025-01-27 19:52:47,278 utils.py INFO: РџРѕРґРєР»СЋС‡РµРЅРёРµ СѓСЃРїРµС€РЅРѕ 
+2025-01-28 10:00:52,609 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-01-28 10:00:52,611 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-01-28 10:00:53,153 utils.py INFO: Подключение успешно 

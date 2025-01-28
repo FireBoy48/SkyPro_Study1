@@ -11,10 +11,17 @@ from config import ROOT_DIR
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s %(name)s %(levelname)s: %(message)s ",
-    filename=Path.joinpath(ROOT_DIR, "logs", "logs_utils.txt"),
+    filename=Path.joinpath(ROOT_DIR, "logs", "logs_root.txt"),
     filemode="w",
     encoding="utf-8",
 )
+utils_logger = logging.getLogger("utils.py")
+utils_handler = logging.FileHandler(Path.joinpath(ROOT_DIR, "logs", "logs_utils.txt"))
+utils_handler.encoding = "utf-8"
+utils_formatter = logging.Formatter("%(asctime)s %(name)s %(levelname)s: %(message)s ")
+utils_handler.setFormatter(utils_formatter)
+utils_logger.addHandler(utils_handler)
+utils_logger.setLevel(logging.DEBUG)
 utils_logger = logging.getLogger("utils.py")
 
 

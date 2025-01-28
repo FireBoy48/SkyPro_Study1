@@ -11,8 +11,13 @@ logging.basicConfig(
     filemode="w",
     encoding="utf-8",
 )
-
 masks_logger = logging.getLogger("masks.py")
+masks_handler = logging.FileHandler(Path.joinpath(ROOT_DIR, "logs", "logs_masks.txt"))
+masks_handler.encoding = "utf-8"
+masks_formatter = logging.Formatter("%(asctime)s %(name)s %(levelname)s: %(message)s ")
+masks_handler.setFormatter(masks_formatter)
+masks_logger.addHandler(masks_handler)
+masks_logger.setLevel(logging.DEBUG)
 
 
 def get_mask_card_number(card_number: Union[int]) -> str:
