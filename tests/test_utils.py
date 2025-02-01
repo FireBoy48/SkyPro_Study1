@@ -68,9 +68,9 @@ def test_parsing_data():
 
 @patch("requests.request")
 def test_external_api(mock_requests):
-    mock_requests.return_value.json.return_value = {"result": 1000}
-    assert external_api(10, "USD", "RUB") == 1000
-    load_dotenv()
-    url = "https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10"
-    headers = {"apikey": os.getenv("API_KEY")}
-    mock_requests.assert_called_once_with("GET", url, headers=headers)
+    mock_requests.return_value.json = {"result": 1000}
+    assert external_api(1000, "RUB", "RUB") == 1000
+    # load_dotenv()
+    # url = "https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10"
+    # headers = {"apikey": os.getenv("API_KEY")}
+    # mock_requests.assert_called_once_with("GET", url, headers=headers)

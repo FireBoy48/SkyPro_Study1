@@ -89,4 +89,20 @@ external_api(amount, currency_code_from, currency_code_to='RUB') #где amount 
                                                                  #currency_code_to валюта в которую переводят 
 ```
 
+## read_table
+
+### read_csv
+* Функция для чтения csv файлов
+* Вызывается при помощи
+```
+read_csv(path_to_file)        #где path_to_file: путь до файла csv
+```
+
+### read_xlsx
+* Функция для чтения xlsx файлов
+* Вызывается при помощи
+```
+read_xlsx(path_to_file)        #где path_to_file: путь до файла xlsx
+```
+
 __Весь функционал протестирован, подробности в html-файле__
