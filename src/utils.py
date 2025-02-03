@@ -86,7 +86,8 @@ def external_api(amount: float, currency_code_from: str, currency_code_to: str =
         headers = {"apikey": os.getenv("API_KEY")}
         utils_logger.info(f"Подключение к {url}")
         response = requests.request("GET", url, headers=headers)
-        if response.status_code == 200:
+        status_code = response.status_code
+        if status_code == 200:
             utils_logger.info("Подключение успешно")
             return float(response.json()["result"])
         else:

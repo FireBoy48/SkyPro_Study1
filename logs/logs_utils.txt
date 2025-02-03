@@ -6,3 +6,84 @@
 2025-01-28 10:00:52,609 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
 2025-01-28 10:00:52,611 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
 2025-01-28 10:00:53,153 utils.py INFO: Подключение успешно 
+2025-02-01 19:13:50,997 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:13:50,999 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:13:54,267 utils.py INFO: Подключение успешно 
+2025-02-01 19:13:54,313 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:13:54,321 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:13:54,324 utils.py ERROR: Ошибка [Errno 2] No such file or directory: 'wrong_path_to_file' 
+2025-02-01 19:13:54,326 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10 
+2025-02-01 19:13:54,327 utils.py INFO: Запрос не был успешным. Возможная причина: 
+ <MagicMock name='request().reason' id='2392301332736'> 
+2025-02-01 19:14:31,317 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:14:31,318 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:14:32,458 utils.py INFO: Подключение успешно 
+2025-02-01 19:14:32,464 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10 
+2025-02-01 19:14:32,464 utils.py INFO: Запрос не был успешным. Возможная причина: 
+ <MagicMock name='request().reason' id='1913721075904'> 
+2025-02-01 19:21:35,041 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:21:35,042 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:21:35,546 utils.py INFO: Подключение успешно 
+2025-02-01 19:21:35,553 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10 
+2025-02-01 19:21:35,553 utils.py INFO: Запрос не был успешным. Возможная причина: 
+ <MagicMock name='request().reason' id='2051597154496'> 
+2025-02-01 19:27:31,980 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:27:31,981 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:27:33,007 utils.py INFO: Подключение успешно 
+2025-02-01 19:27:33,015 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10 
+2025-02-01 19:27:33,015 utils.py INFO: Запрос не был успешным. Возможная причина: 
+ <MagicMock name='request().reason' id='1575714569392'> 
+2025-02-01 19:30:33,805 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:30:33,806 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:30:34,997 utils.py INFO: Подключение успешно 
+2025-02-01 19:31:03,128 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:31:03,135 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:31:04,315 utils.py INFO: Подключение успешно 
+2025-02-01 19:31:04,321 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10 
+2025-02-01 19:31:04,322 utils.py INFO: Запрос не был успешным. Возможная причина: 
+ <MagicMock name='request().reason' id='2064003841200'> 
+2025-02-01 19:32:03,142 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:32:03,144 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:32:06,028 utils.py INFO: Подключение успешно 
+2025-02-01 19:32:06,034 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=10 
+2025-02-01 19:32:06,034 utils.py INFO: Запрос не был успешным. Возможная причина: 
+ <MagicMock name='request().reason' id='2422587997360'> 
+2025-02-01 19:33:17,113 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:33:17,115 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:33:20,324 utils.py INFO: Подключение успешно 
+2025-02-01 19:33:57,732 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:33:57,733 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:34:06,569 utils.py INFO: Подключение успешно 
+2025-02-01 19:34:06,575 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=1000 
+2025-02-01 19:34:06,575 utils.py INFO: Запрос не был успешным. Возможная причина: 
+ <MagicMock name='request().reason' id='3224794184880'> 
+2025-02-01 19:34:24,224 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:34:24,225 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:34:27,373 utils.py INFO: Подключение успешно 
+2025-02-01 19:34:44,531 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:34:44,532 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:34:45,688 utils.py INFO: Подключение успешно 
+2025-02-01 19:36:58,201 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:36:58,202 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:36:59,333 utils.py INFO: Подключение успешно 
+2025-02-01 19:38:14,780 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:38:14,781 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:38:15,961 utils.py INFO: Подключение успешно 
+2025-02-01 19:38:42,458 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:38:42,458 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:38:45,435 utils.py INFO: Подключение успешно 
+2025-02-01 19:38:45,462 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:38:45,464 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:38:45,466 utils.py ERROR: Ошибка [Errno 2] No such file or directory: 'wrong_path_to_file' 
+2025-02-01 19:39:09,304 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:39:09,305 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:39:10,451 utils.py INFO: Подключение успешно 
+2025-02-01 19:39:10,500 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:39:10,503 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:39:10,508 utils.py ERROR: Ошибка [Errno 2] No such file or directory: 'wrong_path_to_file' 
+2025-02-01 19:40:11,047 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-02-01 19:40:11,048 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-02-01 19:40:13,586 utils.py INFO: Подключение успешно 
+2025-02-01 19:40:13,633 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:40:13,636 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
+2025-02-01 19:40:13,639 utils.py ERROR: Ошибка [Errno 2] No such file or directory: 'wrong_path_to_file' 
