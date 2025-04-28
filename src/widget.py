@@ -16,21 +16,23 @@ def get_date(time: str) -> str:
     """Переводит дату в удобный формат"""
     date = list(map(int, time.split("T")[0].split("-")))
     clock = list(map(int, time.split("T")[1].split(":")[:-1:]))
-    second = float(time.split("T")[1].split(":")[-1])
+    #second = float(time.split("T")[1].split(":")[-1])
     dict_time = {
         "year": date[0],
         "month": date[1],
         "day": date[2],
         "hour": clock[0],
         "minute": clock[1],
-        "second": second,
+        #"second": second,
     }
     if (
         1 <= dict_time["month"] <= 12
         and 1 <= dict_time["day"] <= 31
         and 1 <= dict_time["hour"] <= 24
         and 1 <= dict_time["minute"] <= 60
-        and 1 <= dict_time["second"] <= 60
+        #and 1 <= dict_time["second"] <= 60
     ):
-        return f"{dict_time['day']}.{dict_time['month']}.{dict_time['year']}"
+        return f"{"{:02d}".format(dict_time['day'])}.{"{:02d}".format(dict_time['month'])}.{dict_time['year']}"
     return "Некорректный ввод"
+
+#print(get_date('2022-08-24T14:32:38Z;16652'))

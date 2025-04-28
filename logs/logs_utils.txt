@@ -87,3 +87,37 @@
 2025-02-01 19:40:13,633 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
 2025-02-01 19:40:13,636 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\test.json 
 2025-02-01 19:40:13,639 utils.py ERROR: Ошибка [Errno 2] No such file or directory: 'wrong_path_to_file' 
+2025-04-28 10:24:19,100 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:24:19,101 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-04-28 10:24:39,946 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:24:39,947 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-04-28 10:24:40,383 utils.py INFO: Подключение успешно 
+2025-04-28 10:26:04,971 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:26:04,972 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-04-28 10:26:19,020 utils.py INFO: Подключение успешно 
+2025-04-28 10:27:45,052 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:27:45,053 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-04-28 10:27:45,496 utils.py INFO: Подключение успешно 
+2025-04-28 10:28:03,383 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:28:03,384 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-04-28 10:28:03,823 utils.py INFO: Подключение успешно 
+2025-04-28 10:30:00,845 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:30:00,846 utils.py INFO: Подключение к https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount=8221.37 
+2025-04-28 10:30:01,379 utils.py INFO: Подключение успешно 
+2025-04-28 10:30:18,270 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:34:48,121 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:35:58,919 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 10:37:17,676 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 11:40:55,292 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 12:15:46,462 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 12:51:44,796 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 13:00:49,307 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 13:03:00,641 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 13:04:49,255 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 13:46:29,660 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 13:55:06,173 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 13:59:38,822 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 14:02:51,078 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 14:12:33,513 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 15:47:37,406 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
+2025-04-28 15:49:05,194 utils.py INFO: Открыт файл C:\Users\KirillKos\PycharmProjects\SkyPro_Study1\data\operations.json 
