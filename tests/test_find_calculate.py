@@ -1,56 +1,50 @@
 import pytest
+from requests import patch
 
-from src.find_calculate import print_form, find_str
+from src.find_calculate import find_str, print_form
 
-@pytest.mark.parametrize(
-    "value, expected",
-    [
-        ([{
-            "id": 490100847,
-            "state": "EXECUTED",
-            "date": "2018-12-22T02:02:49.564873",
-            "operationAmount": {
-                "amount": "56516.63",
-                "currency": {
-                    "name": "USD",
-                    "code": "USD"
-                }
-            },
-            "description": "Перевод с карты на карту",
-            "from": "Visa Gold 8326537236216459",
-            "to": "MasterCard 6783917276771847"
-        },
-        {
-            "id": 619287771,
-            "state": "EXECUTED",
-            "date": "2019-08-19T16:30:41.967497",
-            "operationAmount": {
-              "amount": "81150.87",
-              "currency": {
-                "name": "USD",
-                "code": "USD"
-              }
-            },
-            "description": "Перевод организации",
-            "from": "Счет 17691325653939384901",
-            "to": "Счет 49304996510329747621"
-          }],
-         [{
-            "id": 619287771,
-            "state": "EXECUTED",
-            "date": "2019-08-19T16:30:41.967497",
-            "operationAmount": {
-              "amount": "81150.87",
-              "currency": {
-                "name": "USD",
-                "code": "USD"
-              }
-            },
-            "description": "Перевод организации",
-            "from": "Счет 17691325653939384901",
-            "to": "Счет 49304996510329747621"
-          }])
-    ],
-)
-def test_find_str(value, expected):
-    find_str(value) == expected
+database = [
+    {
+        "id": 863064926,
+        "state": "EXECUTED",
+        "date": "2019-12-08T22:46:21.935582",
+        "operationAmount": {"amount": "41096.24", "currency": {"name": "USD", "code": "USD"}},
+        "description": "Открытие вклада",
+        "to": "Счет 90424923579946435907",
+    },
+    {
+        "id": 594226727,
+        "state": "CANCELED",
+        "date": "2018-09-12T21:27:25.241689",
+        "operationAmount": {"amount": "67314.70", "currency": {"name": "руб.", "code": "RUB"}},
+        "description": "Перевод организации",
+        "from": "Visa Platinum 1246377376343588",
+        "to": "Счет 14211924144426031657",
+    },
+    {
+        "id": 615064591,
+        "state": "CANCELED",
+        "date": "2018-10-14T08:21:33.419441",
+        "operationAmount": {"amount": "77751.04", "currency": {"name": "руб.", "code": "RUB"}},
+        "description": "Перевод с карты на счет",
+        "from": "Maestro 3928549031574026",
+        "to": "Счет 84163357546688983493",
+    },
+    {
+        "id": 147815167,
+        "state": "EXECUTED",
+        "date": "2018-01-26T15:40:13.413061",
+        "operationAmount": {"amount": "50870.71", "currency": {"name": "руб.", "code": "RUB"}},
+        "description": "Перевод с карты на счет",
+        "from": "Maestro 4598300720424501",
+        "to": "Счет 43597928997568165086",
+    },
+]
+
+# @patch(input)
+# def test_find_str(mock_input):
+#     mock_input.return_value = "Перевод с карты на счет"
+#     result
+
+
+# НЕ ПОНИМАЮ Я ЭТИ МОКИ

@@ -1,6 +1,9 @@
-from config import ROOT_DIR
 from pathlib import Path
+
+from config import ROOT_DIR
+
 transactions_json = Path.joinpath(ROOT_DIR, "data", "operations.json")
+
 
 def filter_by_state(base_idtime: list, state: str = "EXECUTED") -> list:
     """
@@ -8,7 +11,7 @@ def filter_by_state(base_idtime: list, state: str = "EXECUTED") -> list:
     """
     output = []
     for unit in base_idtime:
-        if 'state' in unit:
+        if "state" in unit:
             if unit["state"] == state:
                 output.append(unit)
     return output
@@ -19,9 +22,6 @@ def sort_by_date(base_idtime: list, reverse: bool = True) -> list:
     Сортирует список по дате
     """
     return sorted(base_idtime, key=lambda x: x["date"], reverse=reverse)
-
-
-
 
 
 # print(filter_by_state(user_input))
