@@ -15,10 +15,9 @@ def read_csv(path_to_file: str) -> list:
     :param path_to_file: путь до файла CSV
     :return: Список словарей
     """
-    with open(path_to_file, "r") as file:
+    with open(path_to_file, "r", encoding="utf-8") as file:
         rows = csv.DictReader(file, delimiter=";")
         list_of_dict = []
-        print(rows)
         for row in rows:
             list_of_dict.append(dict(row))
     return list_of_dict
@@ -31,8 +30,8 @@ def read_xlsx(path_to_file: str) -> list:
     :return: Список словарей
     """
     xlsx = pandas.read_excel(path_to_file)
-    print(type(xlsx))
     return xlsx.to_dict("records")
 
 
-read_xlsx(transactions_xlsx)
+# print(read_xlsx(transactions_xlsx))
+# print(read_csv(transactions_csv))

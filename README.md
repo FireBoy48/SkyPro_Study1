@@ -105,4 +105,23 @@ read_csv(path_to_file)        #где path_to_file: путь до файла csv
 read_xlsx(path_to_file)        #где path_to_file: путь до файла xlsx
 ```
 
+## find_calculate
+
+### find_str
+* функция для нахождения строки в description
+* Вызывается при помощи
+```
+find_str(some_list)            #где some_list список словарей с ключем discription
+```
+
+### print_form
+* функция для вывода данных по форме
+* Вызывается при помощи
+```
+print_form(some_list            #где some_list список словарей в формате json
+```
+
+## main
+* основной модуль при запуске которого можно информацию из 3 видов файлов
+
 __Весь функционал протестирован, подробности в html-файле__

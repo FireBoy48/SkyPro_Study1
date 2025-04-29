@@ -54,20 +54,20 @@ def load_data_json(path_to_file: str) -> list:
     return data_operations
 
 
-def parsing_data(data_operations: list, num_transaction: int = 1) -> tuple:
+def parsing_data(data_operations: list) -> tuple:
     """
     Возвращает данные о сумме транзакции и валюте в которой она была проведена
     :param data_operations: data_operations это информация о транзакциях в виде json-строки
     :param num_transaction: порядковый номер транзакции
     :return: (сумма, валюта)
     """
-    num_transaction -= 1
+
     if data_operations == []:
         amount = 0
         currency_code = "RUB"
     else:
-        amount = float(data_operations[num_transaction]["operationAmount"]["amount"])
-        currency_code = data_operations[num_transaction]["operationAmount"]["currency"]["code"]
+        amount = float(data_operations["operationAmount"]["amount"])
+        currency_code = data_operations["operationAmount"]["currency"]["code"]
     return amount, currency_code
 
 
@@ -98,5 +98,6 @@ def external_api(amount: float, currency_code_from: str, currency_code_to: str =
         return amount
 
 
-load_dotenv()
-print(external_api(*parsing_data(load_data_json(PATH_TO_DATA), 2)))
+# load_dotenv()
+# print(external_api(*parsing_data(load_data_json(PATH_TO_DATA), 2)))
+# print(load_data_json(PATH_TO_DATA))
